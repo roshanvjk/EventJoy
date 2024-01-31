@@ -1,0 +1,149 @@
+/* Packages.css */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
+.baby-show {
+    font-family: 'Kanit', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .baby-show h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #000000;
+    padding-top: 4rem;
+  }
+  
+  .baby-show p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .pricing-table {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .package {
+    background: linear-gradient(135deg, #fff, #f2f2f2); /* Gradient background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    padding: 2rem;
+    flex-basis: 30%;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+  }
+  
+  .package:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly bigger shadow on hover */
+  }
+  
+  .package h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .package p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #4caf50;
+  }
+  
+  .package ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .package li {
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .package button {
+    background: linear-gradient(135deg, #4caf50, #45a049); /* Gradient button */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .package button:hover {
+    background: linear-gradient(135deg, #45a049, #408b41); /* Darker gradient on hover */
+  }
+  
+  .free-trial {
+    background: linear-gradient(135deg, #4caf50, #45a049);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .free-trial:hover {
+    background: linear-gradient(135deg, #45a049, #408b41);
+  }
+  .flex-button{
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-button p{
+    margin-top: 5px;
+  }
+  .addcart{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  .buttons-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .count-btn,
+  .add-to-cart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .count-btn {
+    background-color: #3498db;
+    color: #fff;
+    margin-right: 5px;
+  }
+  
+  .count-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .count {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+    color: #333;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #27ae60;
+  }
+  

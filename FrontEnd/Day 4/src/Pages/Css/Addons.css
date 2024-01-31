@@ -1,0 +1,32 @@
+/* .card {
+    width: 300px;
+    margin: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .container {
+    flex: 1;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .container h4 {
+    margin: 0;
+  }
+  
+  .container p {
+    margin-top: 8px;
+    color: #666;
+  }
+   */

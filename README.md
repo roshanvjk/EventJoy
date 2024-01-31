@@ -1,2 +1,1 @@
-# EvventJoy
- A Dynamic Solution for Full-Spectrum Birthday Management
+Welcome to the Full-Spectrum Birthday Management System! This dynamic solution is designed to streamline and enhance the process of managing birthdays for individuals and groups. Whether you're organizing birthday celebrations for friends, family, or colleagues, this system provides a comprehensive and user-friendly platform.
