@@ -1,0 +1,77 @@
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: auto;
+  font-size: 32px;
+}
+
+.line {
+  margin-top: 10px;
+}
+
+.line hr {
+  border: 1px solid #ccc;
+}
+
+.backyard-olympics {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.party-image {
+  width: 100%;
+  height: 300px;
+}
+
+.content-container {
+  flex: 2;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.details {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.count-container {
+  text-align: right;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3;
+}

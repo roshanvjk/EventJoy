@@ -1,0 +1,772 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+    CSS - Akshay Bhat
+-----------------------------------------------------------------*/
+
+/*
+*{
+    background-color: rgba(0,0,0,0.1)
+}
+*/
+
+:root {
+  --accenture-violet: #a12aff;
+  --accenture-violet-1: #A100FF; 
+  --accenture-black: #020b2a;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* FontFace definitions */
+@font-face {
+  font-family: "GraphikRegular";
+  src: url("fonts/Graphik/Graphik-Regular.ttf");
+}
+
+@font-face {
+  font-family: "GraphikBlack";
+  src: url("fonts/Graphik/Graphik-Black.ttf");
+}
+
+@font-face {
+  font-family: "GraphikBold";
+  src: url("fonts/Graphik/Graphik-Bold.ttf");
+}
+
+@font-face {
+  font-family: "GraphikSemibold";
+  src: url("fonts/Graphik/Graphik-Semibold.ttf");
+}
+/* End of FontFace definitions */
+
+.navbar {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.navbar .navbar-brand img {
+  height: 28px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link.header-nav-link-text {
+    font-family: 'GraphikRegular' !important;
+    font-size: 16px !important;
+    color: #000000 !important;
+    line-height: 21px !important;
+  }
+
+  .nav-item .btn {
+    margin-top: 10px;
+  }
+
+  .navbar-dark .navbar-nav .show > .nav-link,
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+    border-bottom: 4px solid var(--accenture-violet);
+    background: #414853;
+    border-bottom-style: inset;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 4px solid transparent;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 1);
+    background: #414853;
+    border-bottom-style: inset;
+    border-bottom: 4px solid var(--accenture-violet);
+  }
+
+  .hp-header .navbar-light .navbar-nav .show > .nav-link,
+  .navbar-light .navbar-nav .nav-link.active {
+    border-bottom: 4px solid var(--accenture-violet-1);
+    border-bottom-style: inset;
+    font-family: 'GraphikSemibold' !important;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 12rem;
+    padding: 0.7rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #020b2a;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px #0000001a;
+  }
+
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    clear: both;
+    font-weight: 400;
+    color: #020b2a;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #ededed;
+  }
+
+  /* jobs page css */
+  .hp-jobs > .nav-tabs {
+    border-bottom: none;
+  }
+  .hp-jobs > .nav-tabs .nav-link.active {
+    color: var(--accenture-violet);
+    background-color: #f2f2f2 !important;
+  }
+  .hp-jobs > .nav-tabs .nav-link {
+    color: black;
+    background-color: #ffffff;
+    border: none;
+  }
+  .hp-job-details.nav {
+    border-bottom: 0.699999988079071px ridge #cccccc;
+  }
+  .hp-job-details > .nav-item .nav-link.active {
+    border-bottom: 3px solid var(--accenture-violet);
+    color: var(--accenture-violet);
+  }
+  .hp-job-details > .nav-item .nav-link {
+    color: black;
+  }
+}
+.card-border {
+  border-top: 2px solid var(--accenture-violet);
+}
+.navbar-brand {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-right: 2rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn.btn-secondary.job-Applied {
+  color: #ffffff;
+  background-color: #727889;
+  border-color: #727889;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn-primary {
+  color: #fff;
+  background-color: var(--accenture-violet);
+  border-color: var(--accenture-violet);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  color: #fff;
+  background-color: var(--accenture-violet) !important;
+  border-color: var(--accenture-violet) !important;
+  opacity: 0.8;
+}
+.review-process .btn.btn-outline-primary {
+  color: #004dff;
+  border: 1px solid #004dff;
+  border-radius: 0;
+}
+.review-process .btn.btn-outline-primary:hover {
+  background: #004dff;
+  color: #fff;
+}
+
+.banner-content h1 {
+  color: #020b2a;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 50px;
+  margin-bottom: 10px;
+  font-family: 'GraphikBold';
+}
+
+.banner-content h2 {
+  font-size: 1.5rem;
+  line-height: 31px;
+  font-family: 'GraphikBold';
+  color: #020b2a;
+  margin-bottom: 0px;
+}
+
+.banner-content h3 {
+  font-size: 24px;
+  line-height: 31px;
+  font-family: 'GraphikBold';
+  color: #020b2a;
+  margin-bottom: 0px;
+}
+
+.banner-content h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #020b2a;
+  margin-bottom: 0px;
+}
+
+.review-process {
+  padding-bottom: 60px;
+}
+
+.btn.btn-outline {
+  color: var(--accenture-violet);
+  border: 1px solid var(--accenture-violet);
+}
+
+.btn.btn-outline:hover {
+  background: var(--accenture-violet);
+  color: #fff;
+}
+
+.video-section .col {
+  margin-bottom: 30px;
+}
+
+/*----------------------
+Support css
+
+------------------*/
+.acc-background {
+  padding: 30px 0px;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #020b2a;
+  text-decoration: none;
+  background-color: transparent;
+  border-left: 2px solid transparent;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  font-family: 'GraphikRegular';
+  font-size: 16px;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: var(--accenture-violet);
+  border-color: var(--accenture-violet);
+  background-color: transparent;
+  border-left: 2px solid;
+}
+
+.category-card {
+  border-radius: 5px;
+  background: #ffffff;
+  padding-bottom: 30px;
+  border: 1px solid #e1e3e8;
+}
+
+.category-card p {
+  letter-spacing: 0px;
+  color: #020b2a;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'GraphikBold';
+}
+
+.category-card .contact-card-content {
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.mt-5 {
+  margin-top: 10px !important;
+}
+
+.pt-5 {
+  padding-top: 10px !important;
+}
+
+.list-group {
+  border-radius: 0;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.bg-light,
+body {
+  --bs-bg-opacity: 1;
+  background-color: #f9f9f9 !important;
+  font-family: 'GraphikRegular';
+}
+.bg-grey-light {
+  background-color: #f2f2f2 !important;
+}
+.bg-white {
+  background-color: #ffffff !important;
+}
+.text-color-Tangaroa {
+  color: #020b2a !important;
+}
+.text-color-black {
+  color: #000000 !important;
+}
+/*Accordian CSS */
+.blocks-faqs-3 .faqs .toggle {
+  background-color: #fff;
+  border: 1px solid #e1e3e8;
+  border-radius: 5px;
+}
+
+.blocks-faqs-3 .faqs .toggle-header {
+  padding: 18px 22px;
+  margin: 0;
+}
+
+.blocks-faqs-3 .faqs .toggle-content {
+  border-top: 0px solid #eee;
+  padding: 20px 25px;
+  padding-left: 66px !important;
+  color: #020b2a;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 0px;
+}
+
+.toggle-title,
+.accordion-title {
+  padding-left: 18px !important;
+}
+
+.toggle-active > .toggle-header {
+  color: var(--accenture-violet);
+}
+
+.toggle-header,
+.accordion-header {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  cursor: pointer;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.toggle-title {
+  font-size: 16px;
+  font-family: 'GraphikRegular';
+  color: #020b2a;
+  font-weight: 800;
+}
+.toggle-title.active {
+  color: var(--accenture-violet);
+}
+.hr {
+  height: 1px;
+  width: 100%;
+  background: #ededed;
+  margin: 20px 0px;
+}
+
+p.help-text {
+  margin-bottom: 5px !important;
+  font-size: 14px;
+  color: #727889;
+}
+
+.btn-contact {
+  border: 2px solid #000000;
+  border-radius: 3px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.faqs h3 {
+  margin-bottom: 12px;
+  color: #020b2a;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.toggle-content ul {
+  list-style-type: disc;
+  padding-left: 17px;
+  margin-bottom: 30px;
+}
+
+.toggle-content ul p > strong {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #020b2a;
+  font-weight: 400;
+}
+
+.custom-search {
+  margin-bottom: 0px !important;
+}
+
+.custom-search input {
+  height: 45px;
+  border: 1px solid #e1e3e8;
+  border-radius: 3px;
+}
+
+.has-search {
+  width: 100%;
+}
+
+.has-search .form-control {
+  padding-left: 50px;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.9rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+  left: 20px;
+}
+
+.toggle-content .table tr td:first-child {
+  width: 25% !important;
+}
+
+.toggle-content p {
+  margin-bottom: 0px;
+}
+
+.toggle-content table {
+  margin-bottom: 40px;
+}
+
+.toggle-content .sub-heading {
+  margin-bottom: 10px;
+}
+
+.modal-title {
+  font-size: 20px;
+  color: #020b2a;
+}
+
+.modal-header {
+  border-bottom: 1px solid transparent;
+}
+
+.toggle-content ul li {
+  padding: 6px 0px;
+}
+
+.indent .sub-heading {
+  margin-top: 60px;
+}
+
+.toggle-content img {
+  margin-top: 16px;
+}
+
+.search-error {
+  padding: 7rem 0.5rem;
+}
+
+.search-error h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.search-error p {
+  font-size: 16px;
+  color: #727889;
+}
+
+.btn-search-contact {
+  color: var(--accenture-violet);
+  font-size: 16px;
+  border: 1px solid var(--accenture-violet);
+  border-radius: 3px;
+  background: #fff;
+  font-weight: 500;
+}
+
+.test {
+  height: 100px;
+  width: 100%;
+  background: red;
+}
+
+.support-card {
+  background-color: #fff;
+  border: 1px solid #e1e3e8;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.support-card .title {
+  color: #020b2a;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.page-title p {
+  color: #020b2a;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  border: 1px solid var(--accenture-violet);
+  background: #fff;
+  color: var(--accenture-violet);
+}
+
+.nav-pills .nav-link {
+  background: #fff;
+  border: 1px solid #e1e3e8;
+  color: #020b2a;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-justified .nav-item,
+.nav-justified > .nav-link {
+  margin: 0px 10px;
+}
+
+.nav-justified .nav-item,
+.nav-justified > .nav-link:first-child {
+  margin-left: 0px;
+}
+
+.nav-justified .nav-item,
+.nav-justified > .nav-link:last-child {
+  margin-left: 0px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.call-button {
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+.help-text {
+  color: #020b2a;
+  font-size: 14px;
+}
+
+.btn-support {
+  background: #fff;
+  border: 1px solid #e1e3e8;
+  color: #020b2a;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  text-transform: none;
+  letter-spacing: 0px;
+  color: #24292e;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.support-card .form-select,
+.support-card .form-control {
+  color: #020b2a;
+  font-weight: 400;
+  font-size: 14px;
+  border: 1px solid #ededed;
+}
+
+.support-card select.form-select {
+  overflow-y: hidden;
+}
+
+.support-card select.form-select option {
+  padding: 10px 5px;
+  color: #1677d7;
+}
+
+.support-card .no-background {
+  background: #fff;
+  border: 1px solid #ededed;
+}
+
+.h-44 {
+  height: 44px;
+}
+
+.contact-card-content h3 {
+  color: #020b2a;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-card-content .btn-chat {
+  border: 1px solid var(--accenture-violet);
+  color: #020b2a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pl-0 {
+  padding-left: 0px !important;
+}
+
+p.call-text {
+  margin-top: -5px !important;
+  color: var(--accenture-violet);
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.modal-header {
+  padding: 30px;
+}
+
+.modal-body {
+  padding: 30px;
+  padding-top: 0px;
+}
+
+.take-test {
+  padding-top: 30px;
+}
+.category-search[type='search'] {
+  font-family: 'GraphikRegular' !important;
+  color: #727889 !important;
+  font-size: 14px !important;
+  line-height: 26px !important;
+  border-radius: 0;
+}
+.hp-inline-search[type='search'] {
+  font-family: 'GraphikRegular' !important;
+  color: #6c6c6c !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  border-radius: 0;
+}
+@media only screen and (max-width: 990px) {
+  .acc-background {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  body {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hp-header .navbar-light .navbar-nav .show > .nav-link,
+  .navbar-light .navbar-nav .nav-link.active {
+    font-family: 'GraphikSemibold' !important;
+  }
+}
+
+
+/* Accordion related changes after angular 13 migration */
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid rgba(0, 0, 0, 0.125)
+}
+
+.accordion-item {
+  border-radius: 0.25rem;
+}
+
+.accordion-header {
+  padding: 0 5px;
+}
+
+.accordion .accordion-item {
+  margin: 10px 0;
+}
+.accordion .accordion-item:last-of-type {
+  margin-bottom: 26px;
+}
+
+.accordion-button {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.accordion-button.collapsed {
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button .toggle-open.icon-caret-down1 {
+  color: var(--accenture-violet);
+}
+
+.accordion-body .toggle-content {
+  display: block;
+}

@@ -1,0 +1,38 @@
+.addon-list-page {
+  padding: 20px;
+}
+
+.addon-list-page h1 {
+  margin-bottom: 20px;
+}
+
+.addon-item {
+  list-style: none;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+}
+
+.addon-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.addon-details {
+  flex-grow: 1;
+}
+
+.addon-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.addon-description {
+  margin-bottom: 5px;
+}
+
+.addon-price {
+  font-style: italic;
+}
